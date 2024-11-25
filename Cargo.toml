@@ -1,0 +1,17 @@
+[package]
+name = "latte_rust_redis_module_hello"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "lattehello"
+
+[dev-dependencies]
+env_logger = "0.10"
+#redis-module = { version="1.0", features = ["experimental-api", "test"]}
+
+[dependencies]
+redis-module = { version="1", features = ["experimental-api"]}
